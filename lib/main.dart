@@ -1,38 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:project/homepage.dart';
+import 'screens/home_screen.dart';
 
-void main() => runApp(BlueCarbonApp());
+void main() => runApp(const MyApp());
 
-class BlueCarbonApp extends StatelessWidget {
-  const BlueCarbonApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Blue Carbon MRV',
+      title: 'Smart Translate',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: Colors.green[700],
-        scaffoldBackgroundColor: Colors.grey[100],
-        textTheme: GoogleFonts.poppinsTextTheme(
-          Theme.of(context).textTheme,
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF667eea),
+          brightness: Brightness.dark,
         ),
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.green[600],
-            foregroundColor: Colors.white,
-          ),
+        textTheme: GoogleFonts.poppinsTextTheme().apply(
+          fontFamily: 'Noto Sans',
         ),
-        outlinedButtonTheme: OutlinedButtonThemeData(
-          style: OutlinedButton.styleFrom(
-            foregroundColor: Colors.green[700],
-            side: BorderSide(color: Colors.green[700]!),
-          ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
         ),
       ),
-      home: HomePage(),
-      debugShowCheckedModeBanner: false,
+      home: const HomeScreen(),
     );
   }
 }

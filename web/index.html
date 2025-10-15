@@ -18,7 +18,12 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Smart Translate - Offline Multilingual Translation App">
+  
+  <!-- Google Fonts for multilingual support -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -29,8 +34,35 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>project</title>
+  <title>Smart Translate</title>
   <link rel="manifest" href="manifest.json">
+  
+  <style>
+    /* Ensure proper font rendering for multilingual text */
+    * {
+      font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Sinhala', sans-serif;
+    }
+    
+    /* Specific font families for different scripts */
+    .devanagari {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+    
+    .tamil {
+      font-family: 'Noto Sans Tamil', sans-serif;
+    }
+    
+    .sinhala {
+      font-family: 'Noto Sans Sinhala', sans-serif;
+    }
+    
+    /* Ensure text is visible and properly rendered */
+    body {
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>

@@ -1,0 +1,11 @@
+services:
+  - type: static_site
+    name: carbon_web
+    repo: https://github.com/Sarweshchopade/carbon_web
+    branch: main
+    buildCommand: |
+      git clone https://github.com/flutter/flutter.git -b stable
+      export PATH="$PATH:`pwd`/flutter/bin"
+      flutter doctor
+      flutter build web
+    staticPublishPath: build/web
