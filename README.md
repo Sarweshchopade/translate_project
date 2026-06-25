@@ -7,14 +7,13 @@ A comprehensive offline translation application built for the Smart India Hackat
 ### Translation Modes
 - **Text Translation**: Type and translate text instantly
 - **Speech Translation**: Speak and get instant translation with text-to-speech
-- **Image Translation**: Extract and translate text from images using OCR
 
 ### Supported Languages
 - 🇳🇵 **Nepali** ↔ English
-- 🇱🇰 **Sinhalese** ↔ English  
+- 🇳🇵 **Nepali** ↔ Hindi
+- 🇳🇵 **Nepali** ↔ marathi
 - 🇺🇸 **English** ↔ Hindi/Tamil/Marathi
 - 🇮🇳 **Hindi** ↔ English
-- 🇮🇳 **Tamil** ↔ English
 - 🇮🇳 **Marathi** ↔ English
 
 ### Key Features
